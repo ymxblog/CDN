@@ -1,0 +1,104 @@
+{
+  "version": "v2",
+  "content": [
+    {
+      "title": "BlogFinder",
+      "link": "https://bf.zzxworld.com/",
+      "avatar": "https://bf.zzxworld.com/images/logo-v2.png",
+      "descr": "每个博客都是一座宝藏",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "个站商店",
+      "link": "https://storeweb.cn/",
+      "avatar": "https://upload.storeweb.cn/image/logo.png",
+      "descr": " 一个精致的，带社交元素的个人网站发布平台，博客收录网站",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "十年之约",
+      "link": "https://foreverblog.cn/",
+      "avatar": "https://www.foreverblog.cn/favicon.ico",
+      "descr": "一个人的寂寞，一群人的狂欢。",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "博客驿站",
+      "link": "https://www.bloginn.vip/",
+      "avatar": "https://www.bloginn.vip/img/bklnntx.png",
+      "descr": "发现新博客认识新朋友！",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "博客我们BlogWe",
+      "link": "https://blogwe.com/",
+      "avatar": "https://blogwe.com/img/logo200.png",
+      "descr": "我们不生产博客，我们只是博客的搬运工。",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "博客圈",
+      "link": "https://bokequan.cn/",
+      "avatar": "https://bokequan.cn/wp-content/uploads/2024/10/1730017489-logo.png",
+      "descr": "致力于个人独立博客",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "集博栈",
+      "link": "https://zhblogs.ohyee.cc/",
+      "avatar": "https://zhblogs.ohyee.cc/logo.png",
+      "descr": "尝试链接几乎所有的中文博客",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "博友圈",
+      "link": " https://www.boyouquan.com/",
+      "avatar": "https://www.boyouquan.com/assets/images/sites/logo/logo-small.png",
+      "descr": "博客人的朋友圈，博客收录与文章 RSS 聚合网站。",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "博客录boke.lu",
+      "link": "https://boke.lu/",
+      "avatar": "https://api.xinac.net/icon/?url=https://boke.lu/logo.png",
+      "descr": "博客收录展示平台~",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "笔墨迹BLOGS·CN",
+      "link": "https://blogscn.fun/",
+      "avatar": "https://photo.xiangming.site/img/blogscn_icon.png",
+      "descr": "致敬还在写博客的我们",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    },
+    {
+      "title": "开往-友链接力",
+      "link": "https://www.travellings.cn/",
+      "avatar": "https://www.travellings.cn/assets/favicon.png",
+      "descr": "友链活跃，网页接力，流量流动，网络开放",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    }
+  ]
+}
