@@ -12,7 +12,6 @@
         walineContainer = document.getElementById('waline-wrap');
         
         if (!walineContainer) {
-            console.warn('Waline container not found');
             return; // 如果没有找到容器则退出
         }
 
@@ -45,7 +44,6 @@
         const contentNode = commentItem.querySelector('.wl-card > .wl-content');
 
         if (!contentNode) {
-            console.error('内容节点未找到:', commentItem);
             return;
         }
 
@@ -74,7 +72,6 @@
         // 获取编辑器实例
         const editor = walineContainer.querySelector('.wl-editor');
         if (!editor) {
-            console.error('编辑器未找到');
             return;
         }
 
