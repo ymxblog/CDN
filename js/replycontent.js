@@ -1,11 +1,39 @@
 (function() {
     let walineContainer = null;
-    
+    let observer = null;
+
     const initWalineReply = () => {
-        walineContainer?.removeEventListener('click', handleClick);
+        // 移除旧的事件监听器
+        if (walineContainer) {
+            walineContainer.removeEventListener('click', handleClick);
+        }
+
+        // 获取新的评论容器
         walineContainer = document.getElementById('waline-wrap');
-        if (!walineContainer) return;
+        
+        if (!walineContainer) {
+            console.warn('Waline container not found');
+            return; // 如果没有找到容器则退出
+        }
+
+        // 添加点击事件监听器
         walineContainer.addEventListener('click', handleClick, { passive: true });
+
+        // 如果旧观察者存在，则断开连接
+        if (observer) {
+            observer.disconnect();
+        }
+
+        // 创建新的 MutationObserver 实例并开始观察
+        observer = new MutationObserver(() => {
+            // 在 DOM 变化时重新初始化
+            initWalineReply();
+        });
+
+        observer.observe(walineContainer, {
+            childList: true,
+            subtree: true
+        });
     };
 
     const handleClick = (e) => {
@@ -15,7 +43,7 @@
         // 精准定位当前评论内容
         const commentItem = replyBtn.closest('.wl-card-item');
         const contentNode = commentItem.querySelector('.wl-card > .wl-content');
-        
+
         if (!contentNode) {
             console.error('内容节点未找到:', commentItem);
             return;
@@ -30,7 +58,7 @@
         ).forEach(n => n.remove());
 
         // 转换普通链接为Markdown格式（保留非锚点链接）
-        sandbox.querySelectorAll('a:not([href^="#"])').forEach(a => { // 排除锚点链接
+        sandbox.querySelectorAll('a:not([href^="#"])').forEach(a => {
             const text = a.textContent.trim();
             const href = a.getAttribute('href') || '';
             a.replaceWith(`[${text}](${href})`);
@@ -77,16 +105,12 @@
             selection.removeAllRanges();
             selection.addRange(range);
         }
-        
+
         editor.dispatchEvent(inputEvent);
         editor.focus();
     };
 
     // 初始化及事件监听
-    initWalineReply();
     document.addEventListener('pjax:complete', initWalineReply);
-    new MutationObserver(() => initWalineReply()).observe(document.body, {
-        childList: true,
-        subtree: true
-    });
+    initWalineReply(); // 初次调用以进行初始化
 })();
