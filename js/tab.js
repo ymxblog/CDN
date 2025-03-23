@@ -15,9 +15,4 @@ $(document).ready(function() {
             });
         }
     });
-
-    // 可选：处理 PJAX 事件
-    $(document).on('pjax:end', function() {
-        console.log('PJAX 加载完成');
-    });
 });
