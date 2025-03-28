@@ -52,7 +52,7 @@
         
         // 移除干扰元素
         sandbox.querySelectorAll(
-            'span, .wl-meta, svg, img, .wl-quote, blockquote, a[href^="#"]'
+            'span, .wl-meta, svg, img, .wl-quote, blockquote, a[href^="#"], pre'
         ).forEach(n => n.remove());
 
         // 转换普通链接为Markdown格式（保留非锚点链接）
