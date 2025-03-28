@@ -1,0 +1,14 @@
+{
+  "version": "v2",
+  "content": [
+    {
+      "title": "博客我们BlogWe",
+      "link": "https://blogwe.com/",
+      "avatar": "https://blogwe.com/img/logo200.png",
+      "descr": "我们不生产博客，我们只是博客的搬运工。",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red"
+    }
+  ]
+}
