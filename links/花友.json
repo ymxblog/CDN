@@ -1,0 +1,68 @@
+{
+  "version": "v2",
+  "content": [
+    {
+      "title": "Cloud",
+      "link": "https://www.cloudofficial.top/",
+      "avatar": "https://raw.githubusercontent.com/cloud-oc/FileHub/refs/heads/main/root/Picture/Cloud.ico",
+      "descr": "写作即自由",
+      "topimg": "",
+      "tag": "",
+      "color": ""
+    },
+    {
+      "title": "周润发",
+      "link": "https://blog.aizrf.com/",
+      "avatar": "https://blog.aizrf.com/img/logo.png",
+      "descr": "收录开源，好用的互联网项目",
+      "topimg": "",
+      "tag": "",
+      "color": ""
+    },
+    {
+      "title": "钧言极客",
+      "link": "https://www.jinjun.top/",
+      "avatar": "https://www.jinjun.top/img/avatar.jpg",
+      "descr": "记录生活、爱好学习、不爱折腾",
+      "topimg": "",
+      "tag": "",
+      "color": ""
+    },
+    {
+      "title": "葱苓语畔",
+      "link": "https://blog.ciraos.top/",
+      "avatar": "https://blog.ciraos.top/avatar.avif",
+      "descr": "Do not worry, just be happy.",
+      "topimg": "",
+      "tag": "",
+      "color": ""
+    },
+    {
+      "title": "秋枫博客",
+      "link": "https://qsub.cn/",
+      "avatar": "https://file.qsub.cn/blog/2024/8/a62f6edc94844a94ba9f1d08e3cbd6b9.jpg",
+      "descr": "让世界变得更美好",
+      "topimg": "",
+      "tag": "",
+      "color": ""
+    },
+    {
+      "title": "茗辰原 の 异世界",
+      "link": "https://mingcy.cn/",
+      "avatar": "https://mingcy.cn/image/mcy.png",
+      "descr": "茶香四溢,编程世界",
+      "topimg": "",
+      "tag": "",
+      "color": ""
+    },
+    {
+      "title": "张苹果",
+      "link": "https://zhangpingguo.com/",
+      "avatar": "https://zhangpingguo.com/logo.jpg",
+      "descr": "这个人很简单，没什么好说的。",
+      "topimg": "",
+      "tag": "",
+      "color": ""
+    }
+  ]
+}
