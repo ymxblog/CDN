@@ -8,7 +8,9 @@
       "descr": "意义是自己赐予的",
       "topimg": "",
       "tag": "二代博主",
-      "color": "pink"
+      "color": "pink",
+      "rss": "",
+      "linkpage": "https://yeminxi.github.io/links/"
     },
     {
       "title": "叶泯希-",
@@ -17,7 +19,9 @@
       "descr": "在不知所措的年龄，什么都不尽人意。",
       "topimg": "",
       "tag": "初代博主",
-      "color": "pink"
+      "color": "pink",
+      "rss": "",
+      "linkpage": "https://one.blog.418121.xyz/friends/"
     },
     {
       "title": "叶泯希",
@@ -26,7 +30,9 @@
       "descr": "见过花开就好",
       "topimg": "",
       "tag": "博主",
-      "color": "purple"
+      "color": "purple",
+      "rss": "https://blog.418121.xyz/feed.xml",
+      "linkpage": "https://blog.418121.xyz/links/"
     }
   ]
 }

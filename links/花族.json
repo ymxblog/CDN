@@ -2,13 +2,26 @@
   "version": "v2",
   "content": [
     {
+      "title": "博客星球",
+      "link": "https://www.blogplanet.cn/",
+      "avatar": "https://www.blogplanet.cn/img/bkxq.png",
+      "descr": "每一个博客都是一个独立星球！",
+      "topimg": "",
+      "tag": "组织",
+      "color": "red",
+      "rss": "",
+      "linkpage": "https://www.blogplanet.cn/"
+    },
+    {
       "title": "BlogsClub",
       "link": "https://www.blogsclub.org/",
-      "avatar": "https://www.blogsclub.org/usr/themes/default/favicon.png",
+      "avatar": "https://images.418121.xyz/file/lqlb/1766053104930.webp",
       "descr": "个人博客集结地",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "",
+      "linkpage": "https://www.blogsclub.org/members.html"
     },
     {
       "title": "BlogFinder",
@@ -17,7 +30,9 @@
       "descr": "每个博客都是一座宝藏",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "",
+      "linkpage": "https://bf.zzxworld.com/s/1508"
     },
     {
       "title": "个站商店",
@@ -26,7 +41,9 @@
       "descr": " 一个精致的，带社交元素的个人网站发布平台，博客收录网站",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "",
+      "linkpage": "https://storeweb.cn/site/o/2269"
     },
     {
       "title": "十年之约",
@@ -35,16 +52,9 @@
       "descr": "一个人的寂寞，一群人的狂欢。",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
-    },
-    {
-      "title": "博客驿站",
-      "link": "https://www.bloginn.vip/",
-      "avatar": "https://www.bloginn.vip/img/bklnntx.png",
-      "descr": "发现新博客认识新朋友！",
-      "topimg": "",
-      "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "https://foreverblog.cn/feeds.html",
+      "linkpage": "https://www.foreverblog.cn/blog/6570.html"
     },
     {
       "title": "博客圈",
@@ -53,25 +63,31 @@
       "descr": "致力于个人独立博客",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "",
+      "linkpage": "https://bokequan.cn/?s=%E5%8F%B6%E6%B3%AF%E5%B8%8C"
     },
     {
       "title": "集博栈",
-      "link": "https://zhblogs.cn/",
-      "avatar": "https://zhblogs.cn/favicon.png",
+      "link": "https://www.zhblogs.net/",
+      "avatar": "https://www.zhblogs.net/favicon.png",
       "descr": "尝试链接几乎所有的中文博客",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "",
+      "linkpage": "https://www.zhblogs.net/list"
     },
     {
       "title": "博友圈",
-      "link": " https://www.boyouquan.com/",
+      "link": "https://www.boyouquan.com/home",
       "avatar": "https://www.boyouquan.com/assets/images/sites/logo/logo-small.png",
       "descr": "博客人的朋友圈，博客收录与文章 RSS 聚合网站。",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "https://www.boyouquan.com/feed.xm",
+      "linkpage": "https://www.boyouquan.com/blogs/blog.418121.xyz"
     },
     {
       "title": "博客录boke.lu",
@@ -80,7 +96,9 @@
       "descr": "博客收录展示平台~",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "",
+      "linkpage": "https://boke.lu/fshl"
     },
     {
       "title": "笔墨迹BLOGS·CN",
@@ -89,16 +107,20 @@
       "descr": "致敬还在写博客的我们",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "https://blogscn.fun/",
+      "linkpage": "https://blogscn.fun/blogs/profile?bid=01jr5t5rwey92cq94mxgxck82h"
     },
     {
       "title": "开往-友链接力",
       "link": "https://www.travellings.cn/",
-      "avatar": "https://www.travellings.cn/assets/favicon.png",
+      "avatar": "https://images.418121.xyz/file/lqlb/1769675493904.webp",
       "descr": "友链活跃，网页接力，流量流动，网络开放",
       "topimg": "",
       "tag": "组织",
-      "color": "red"
+      "color": "red",
+      "rss": "",
+      "linkpage": "https://list.travellings.cn/"
     }
   ]
 }
