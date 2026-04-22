@@ -111,3 +111,75 @@
     document.addEventListener('pjax:complete', initWalineReply);
     initWalineReply(); // 初次调用以进行初始化
 })();
+
+(function() { // 使用立即执行函数表达式 (IIFE) 封装，避免全局污染
+
+    /**
+     * 处理单个 emoji 图片，将 alt 属性值赋给 title 属性。
+     * @param {HTMLImageElement} img - 要处理的 img 元素。
+     */
+    function processEmojiImage(img) {
+        // 只有当图片还没有 title 属性时才进行设置，避免重复处理或覆盖手动设置的 title
+        if (!img.hasAttribute('title')) {
+            const altText = img.getAttribute('alt');
+            if (altText && altText.trim() !== '') {
+                img.setAttribute('title', altText);
+                // console.log(`[Emoji Title] 图片 ${img.src || '无src'} 的title已设置为: "${altText}"`); // 调试信息
+            } else {
+                // console.warn(`[Emoji Title] 图片 ${img.src || '无src'} 有 class="wl-emoji" 但 alt 属性为空或缺失，未设置title。`); // 调试信息
+            }
+        }
+    }
+
+    /**
+     * 查找并处理页面中所有 class 包含 'wl-emoji' 的 img 标签。
+     * @param {HTMLElement} [scope=document] - 查找范围，默认为整个文档。
+     */
+    function processAllEmojiImages(scope = document) {
+        const emojiImages = scope.querySelectorAll('img.wl-emoji');
+        emojiImages.forEach(processEmojiImage);
+    }
+
+    // 1. 在 DOM 内容加载完成后，首先处理所有当前已存在的 emoji 图片
+    document.addEventListener('DOMContentLoaded', function() {
+        processAllEmojiImages();
+        // console.log('[Emoji Title] Initial scan and update completed.'); // 调试信息
+    });
+
+    // 2. 设置 MutationObserver 监听 DOM 变化，处理动态添加的 emoji 图片
+    const observer = new MutationObserver(function(mutationsList) {
+        for (const mutation of mutationsList) {
+            // 检查是否有子节点被添加
+            if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                mutation.addedNodes.forEach(node => {
+                    // 只处理元素节点
+                    if (node.nodeType === Node.ELEMENT_NODE) {
+                        // 如果添加的节点本身就是 emoji 图片
+                        if (node.matches && node.matches('img.wl-emoji')) {
+                            processEmojiImage(node);
+                        }
+                        // 如果添加的节点包含 emoji 图片（例如，添加了一个 div，div 里面有 img.wl-emoji）
+                        processAllEmojiImages(node);
+                    }
+                });
+            }
+            // 也可以监听属性变化，如果 alt 属性是动态设置的
+            // else if (mutation.type === 'attributes' && mutation.attributeName === 'alt') {
+            //     if (mutation.target.matches && mutation.target.matches('img.wl-emoji')) {
+            //         processEmojiImage(mutation.target);
+            //     }
+            // }
+        }
+    });
+
+    // 配置 observer 监听整个文档的子节点变化和属性变化
+    observer.observe(document.body, {
+        childList: true, // 监听子节点的添加或移除
+        subtree: true,   // 监听所有后代节点的子节点变化
+        // attributes: true, // 如果 alt 属性是动态添加或修改的，也需要监听属性变化
+        // attributeFilter: ['alt', 'class'] // 如果监听属性，可以指定只监听 alt 和 class 属性
+    });
+
+    // console.log('[Emoji Title] MutationObserver started.'); // 调试信息
+
+})();
