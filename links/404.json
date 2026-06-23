@@ -1,0 +1,14 @@
+{
+  "version": "v2",
+  "content": [
+    {
+      "title": "test",
+      "link": "#",
+      "avatar": "test",
+      "descr": "test",
+      "topimg": "",
+      "tag": "test",
+      "color": "green"
+    }
+  ]
+}
